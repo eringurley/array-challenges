@@ -1,4 +1,4 @@
-const { multiplesOfN, uniqueValues } = require('./index');
+const { multiplesOfN, uniqueValues, commonNums } = require('./index');
 
 //describe  filtered
 describe('filter function', () => {
@@ -24,3 +24,11 @@ describe('unique values', () => {
     expect(uniqueArrayValues).toEqual([3, 5, 12, 7]);
   });
 });
+
+describe('intersection between two arrays')
+  it('returns the common numbers that exist in two arrays', () => {
+    const array1 = [2, 2, 4, 1];
+    const array2 = [1, 2, 0, 2];
+    const commonNumsArray = commonNums(array1, array1)
+    expect(commonNumsArray).toEqual([2,1]);
+  })
