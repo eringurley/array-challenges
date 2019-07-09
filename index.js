@@ -9,9 +9,10 @@ function multiplesOfN(num){
   return filtered;
 }
 
-module.exports = { multiplesOfN };
+function uniqueValues(arr) {
+  let unique = [...new Set(arr)];
+  return unique;
+};
 
-//while i < 100, at any given point i is n; we  can check to see if that number is divisible by the 
-//number coming in from the function -function if num is 
-//divisible by I, push to new array, then retrun that array when done  with the for loop
+module.exports = { multiplesOfN, uniqueValues };
 
