@@ -1,4 +1,4 @@
-const { multiplesOfN } = require('./index');
+const { multiplesOfN, uniqueValues } = require('./index');
 
 //describe  filtered
 describe('filter function', () => {
@@ -15,5 +15,12 @@ describe('filter function', () => {
   it('returns an array of nums',  () => {
     const filtered = multiplesOfN(101);
     expect(filtered).toEqual([]);
+  });
+});
+
+describe('unique values', () => {
+  it('returns each unique value in an arry', () => {
+    const uniqueArrayValues = uniqueValues([3, 3, 5, 3, 12, 7])
+    expect(uniqueArrayValues).toEqual([3, 5, 12, 7]);
   });
 });
