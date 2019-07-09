@@ -14,5 +14,12 @@ function uniqueValues(arr) {
   return unique;
 };
 
-module.exports = { multiplesOfN, uniqueValues };
+function commonNums(array1, array2) {
+  array1.filter(function(val) {
+    return array2.indexOf(val) !== -1;
+  })
+};
+
+
+module.exports = { multiplesOfN, uniqueValues, commonNums };
 

@@ -29,7 +29,8 @@ describe('intersection between two arrays', () => {
   it('returns the common numbers that exist in two arrays', () => {
     const array1 = [2, 2, 4, 1];
     const array2 = [1, 2, 0, 2];
-    const commonNumsArray = commonNums(array1, array1)
-    expect(commonNumsArray).toEqual([2,1]);
+    const newArray = [];
+    const commonNumsArray = commonNums(array1, array2)
+    expect(commonNumsArray).toEqual([2, 1]);
   });
 });
