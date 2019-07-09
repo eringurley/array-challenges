@@ -20,7 +20,7 @@ describe('filter function', () => {
 
 describe('unique values', () => {
   it('returns each unique value in an arry', () => {
-    const uniqueArrayValues = uniqueValues([3, 3, 5, 3, 12, 7])
+    const uniqueArrayValues = uniqueValues([3, 3, 5, 3, 12, 7]);
     expect(uniqueArrayValues).toEqual([3, 5, 12, 7]);
   });
 });
